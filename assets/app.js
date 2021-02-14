@@ -7,7 +7,7 @@ generateJokes()
 
 async function generateJokes() {
     const res = await fetch(
-        "http://v2.jokeapi.dev/joke/Programming,Dark,Spooky?blacklistFlags=nsfw,religious,political,racist,sexist,explicit"
+        "https://v2.jokeapi.dev/joke/Programming,Dark,Spooky?blacklistFlags=nsfw,religious,political,racist,sexist,explicit"
     )
     const data = await res.json();
     let joke = ""
